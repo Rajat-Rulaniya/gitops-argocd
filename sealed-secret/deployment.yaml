@@ -21,7 +21,6 @@ spec:
       - image: siddharth67/secrets:bitnami
         name: secret-app
         imagePullPolicy: Always
-      # uncomment block to mount secret
         volumeMounts:
         - name: app-secret-vol
           mountPath: "/app/crds"
